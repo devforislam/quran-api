@@ -1,0 +1,31 @@
+{
+    "name": "devforislam/quran-api",
+    "description": "Api to access the holy Quran's Ayah",
+    "keywords": [
+        "Quran",
+        "Islam",
+        "Muslim",
+        "Religion"
+    ],
+    "license": "MIT",
+    "type": "project",
+    
+    "require": {
+        "league/fractal": "^0.18.0",
+        "fruitcake/laravel-cors": "^1.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "DevForIslam\\QuranApi\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevForIslam\\QuranApi\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
